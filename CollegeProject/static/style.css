@@ -1,0 +1,75 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border:2px solid black;
+    height:60px;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1000;
+    background-color: white;
+}
+
+
+.nav>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.nav>ul>li{
+    list-style-type: none;
+    margin-right: 35px;
+    
+}
+
+.nav>ul>a{
+    text-decoration: none;
+}
+
+.second_div {
+  margin-top: 62px;
+  position: relative; /* Required for absolute positioning of pseudo-element */
+  height: 600px;
+  background-image: url(src/background1.jpg);
+  background-size: cover;
+}
+
+.second_div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(247, 237, 237, 0.3); /* Adjust opacity as needed */
+}
+
+.info_text {
+  position: relative; /* Ensure z-index works */
+  text-align: center;
+  padding: 200px;
+  z-index: 1; /* Ensure text appears above pseudo-element */
+}
+
+#teext {
+  color: rgb(128, 6, 6);
+  opacity: 1;
+}
+
+.disease_info{
+    background-color: red;
+}
+
+.four_dis{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo{
+    padding-left: 120px;
+}
+
